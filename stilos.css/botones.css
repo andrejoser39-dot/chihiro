@@ -1,0 +1,225 @@
+.contenedor-botones {
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+  justify-content: center;
+  background-color: #002640;
+}
+
+.btn {
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 10px solid #030367;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+.btn-ejemplo-1 {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-ejemplo-1:hover {
+  background-color: #0056b3;
+}
+
+.btn-ejemplo-1:focus {
+  outline: 3px solid #007bff;
+  outline-offset: 2px;
+}
+
+.btn-ejemplo-1:active {
+  background-color: #003d7a;
+  transform: scale(0.98);
+}
+
+.btn-ejemplo-2 {
+  background-color: #28a745;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-ejemplo-2:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-ejemplo-2:focus {
+  border-color: #1e7e34;
+  outline: none;
+}
+
+.btn-ejemplo-2:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-ejemplo-3 {
+  background-color: white;
+  color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-ejemplo-3:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-ejemplo-3:focus {
+  background-color: #dc3545;
+  color: white;
+  outline: none;
+}
+
+.btn-ejemplo-3:active {
+  opacity: 0.7;
+
+}
+
+/* Estilos Generales */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 20px;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+section {
+  padding: 20px;
+  margin-bottom: 30px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+h2 {
+  color: #0056b3;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 10px;
+}
+
+.lista-estructural {
+  list-style-type: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.lista-estructural li {
+  background-color: #e9ecef;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-left: 5px solid #ccc;
+  transition: background-color 0.3s;
+}
+
+.lista-estructural li:first-child {
+  background-color: #d4edda;
+  font-weight: bold;
+  border-left-color: #28a745;
+}
+
+.lista-estructural li:last-child {
+  background-color: #f8d7da;
+  font-style: italic;
+  border-left-color: #dc3545;
+}
+
+.lista-estructural li:nth-child(3) {
+  background-color: #fff3cd;
+  text-transform: uppercase;
+  border-left-color: #ffc107;
+}
+
+.parrafo-editorial {
+  font-size: 1.1em;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.parrafo-editorial::first-letter {
+  font-size: 3em;
+  color: #495057;
+  float: left;
+  margin-right: 5px;
+  padding: 2px;
+  font-weight: 700;
+}
+
+.parrafo-editorial::first-line {
+  background-color: #e9f0f9;
+  color: #0056b3;
+  font-variant: small-caps;
+}
+
+.encabezado-decorado {
+  color: #495057;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+}
+
+.encabezado-decorado::before {
+  content: "✨";
+  margin-right: 15px;
+  font-size: 1.2em;
+  animation: bounce 1s infinite alternate;
+}
+
+.encabezado-decorado::after {
+  content: "🚀";
+  margin-left: 15px;
+  font-size: 1.2em;
+  animation: spin 3s linear infinite;
+}
+
+.tarjeta-interactiva {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #db0000;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+.tarjeta-interactiva:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.tarjeta-interactiva::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #007bff;
+  transition: width 0.4s ease-in-out;
+}
+
+.tarjeta-interactiva:hover::before {
+  width: 0;
+  background-color: #28a745;
+}
+
+.btn-accion {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+.btn-accion:hover {
+  background-color: #0056b3;
+}
+
+.btn-accion:active {
+  transform: scale(0.98);
+}
